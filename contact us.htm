@@ -1,0 +1,121 @@
+<html>
+<head>
+<link href="mainstyle.css", rel="stylesheet", type="text/css" />
+<title>Contact Us</title>
+</head>
+<body onload="dissubnone();">
+<script type="text/javascript" src="mainscript.js"></script>
+<center>
+<div class="homeheader">
+<table width="1024px">
+	<tr>
+		<td width="17%" height="100px"><a href="index.htm"><img class="logoimg" src="res/Logo.png"></a></td>
+		<td>
+			<br><br>
+			<div class="seperator"></div>
+			<a style="text-decoration:none" href="index.htm"><div class="btnhome">Home</div></a>
+			<div class="seperator"></div>
+			<a style="text-decoration:none" href="men.htm"><div class="btnmen" onmouseout="hidemen();" onmouseover="showmen();">Men</div></a>
+			<div class="seperator"></div>
+			<a style="text-decoration:none" href="women.htm"><div class="btnwomen" onmouseout="hidewomen();" onmouseover="showwomen();">Women</div></a>
+			<div class="seperator"></div>
+			<a style="text-decoration:none" href="contact us.htm"><div class="btncu">Contact Us</div></a>
+			<div class="seperator"></div>
+		</td>
+	</tr>
+</table>
+</div>
+<div id="mennav" onmouseout="hidemen();" onmouseover="showmen();">
+<br>
+<a class="btnmenls" href="casual.htm">Casual</a>
+<a class="btnmenls" href="football.htm">Football</a>
+<a class="btnmenls" href="formal.htm">Formal</a>
+<a class="btnmenls" href="premium.htm">Premium</a>
+<a class="btnmenls" href="sports.htm">Sports</a>
+</div>
+<div id="womennav" onmouseout="hidewomen();" onmouseover="showwomen();">
+<br>
+<a class="btnwomenls" href="flipflop.htm">Flip-Flop</a>
+<a class="btnwomenls" href="gladiators.htm">Gladiators</a>
+<a class="btnwomenls" href="sandals.htm">Sandals</a>
+<a class="btnwomenls" href="shoes.htm">Shoes</a>
+<a class="btnwomenls" href="wedges.htm">Wedges</a>
+</div>
+<div style="margin-top:120px;">
+<table width="1024px">
+	<tr align=center>
+		<td width=50%>
+			<div id="contacticon" onmouseover="showcontact();" onmouseout="hidecontact();"></div>
+			<div id="detailcontact" onmouseover="showcontact();" onmouseout="hidecontact();">
+					<table>
+						<tr>
+							<td class="title15px">Akshat Mewada</td><td class="title15px">: +91 88661 46377</td>
+						</tr>
+						<tr>
+							<td class="title15px">Jeet Khatri</td><td class="title15px">: +91 84690 07271</td>
+						</tr>
+						<tr>
+							<td class="title15px">Shubham Vasita</td><td class="title15px">: +91 97258 24122</td>
+						</tr>
+						<tr>
+							<td class="title15px">Avnish Thakkar</td><td class="title15px">: +91 78178 30246</td>
+						</tr>
+					</table>
+			</div>
+		</td>
+		<td width=50%>
+			<div id="mailicon" onmouseover="showmail();" onmouseout="hidemail();"></div>
+			<div id="detailmail" onmouseover="showmail();" onmouseout="hidemail();">
+					<table>
+						<tr>
+							<td class="title15px">Akshat Mewada</td><td class="title15px">: mewadaakshat@gmail.com</td>
+						</tr>
+						<tr>
+							<td class="title15px">Jeet Khatri</td><td class="title15px">: jeet.g.khatri@gmail.com</td>
+						</tr>
+						<tr>
+							<td class="title15px">Shubham Vasita</td><td class="title15px">: shubhamvasita55@gmail.com</td>
+						</tr>
+						<tr>
+							<td class="title15px">Avnish Thakkar</td><td class="title15px">: avnishthakkar14@gmail.com</td>
+						</tr>
+					</table>
+			</div>
+		</td>
+	</tr>
+</table>
+</div>
+<div class="feedheader">Feedback</div>
+<div class="feedbody">
+	<br><br>
+	<form>
+		<table>
+			<tr>
+				<td class="title20px">First Name&nbsp;</td><td class="title20px"> <input class="formtext" type="text" id="fn" maxlength="15" oninput="checkfname();"></td>
+			</tr>
+			<tr>
+				<td class="title20px">Last Name&nbsp;</td><td class="title20px"> <input class="formtext" type="text" id="ln" maxlength="15" oninput="checklname();"></td>			
+			</tr>
+			<tr>
+				<td class="title20px">Email&nbsp;</td><td class="title20px"> <input class="formtext" type="text" id="email" maxlength="25" oninput="checkemail();"></td>		
+			</tr>
+			<tr>
+				<td class="title20px">Mobile No.&nbsp;</td><td class="title20px"> + <input class="formmobcnt" type="text" id="cntcd" maxlength="3" oninput="checkcntcode();"><input class="formmobmain" type="text" id="mobno" maxlength="10" oninput="checkmobno();"></td>
+			</tr>
+			<tr>
+				<td class="title20px">Message&nbsp;</td><td class="title20px"> <textarea rows="5" class="formmes" id="msg" oninput="dissubnone();" onclick="sizechange();"></textarea></td>
+			</tr>
+		</table>
+	</form>
+	<a class="btnsubmit" href="index.htm" id="btnsubmit" onclick="checkform();">Submit</a>
+</div>
+<div class="homefooter">
+<table width="1024px">
+	<tr>
+		<td align=center><div class="title20px" style="margin-top:6px;font-weight:bold;color:gray;">&copy; Reserved by Footkart Corporation 2015</div></td>
+	</tr>
+</table>
+</div>
+</center>
+</body>
+</html>
